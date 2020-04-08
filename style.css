@@ -14,6 +14,11 @@ main {
     padding-bottom: 100px;
 }
 
+a {
+    display: inline;
+    text-decoration: none;
+}
+
 @media screen {
 /* NAV BAR NAV BAR NAV BAR NAV BAR NAV BAR NAV BAR NAV BAR NAV BAR */
 .nav {
@@ -32,11 +37,11 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
-#main-button, #github-button {
+#main-button, #projects-button {
     background-color: rgb(7, 52, 118);
     color: rgb(170, 204, 255);
 }
-#main-button:hover, #main-button:focus, #github-button:hover, #github-button:focus {
+#main-button:hover, #main-button:focus, #projects-button:hover, #projects-button:focus {
     font-family: 'Sen', sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -162,9 +167,19 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.fa {
+    color: rgb(229, 98, 11);
+    background-color: white;
+    margin: 0px 10px 0px 10px;
 }
 /*FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+} 
 
 /* =======================TABLET START==========================*/
 @media screen and (min-width: 750px) {

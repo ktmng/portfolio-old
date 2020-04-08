@@ -3,7 +3,7 @@ function generateMainPage() {
   <section class="nav">
     <button class="nav-button" id="main-button">MAIN</button>
     <button class="nav-button" id="about-button">ABOUT</button>
-    <button class="nav-button" id="github-button">GITHUB</button>
+    <a href="#portfolio" class="nav-button" id="projects-button">PROJECTS</a>
   </section>
 
   <section class="mini-bio">
@@ -12,7 +12,7 @@ function generateMainPage() {
     <img class="grey-box" img src="images/portfolio-doodle.png">
     <p class="orange-box" id="mini-bio-text">I am an aspiring web developer 
       currently enrolled in Thinkful's 
-      Full Stack Web Development Program. <br> 
+      Full Stack Web Development Program.
       I go nuts over watching web pages 
       come to life and cool animal facts. 
       If you have one, you can tell it to me at 
@@ -58,7 +58,7 @@ function generateAboutPage() {
 <section class="nav">
   <button class="nav-button" id="main-button">MAIN</button>
   <button class="nav-button" id="about-button">ABOUT</button>
-  <button class="nav-button" id="github-button">GITHUB</button>
+  <a href="#portfolio" class="nav-button" id="projects-button">PROJECTS</a>
 </section>
 
 <section class="full-bio">
@@ -72,7 +72,16 @@ function generateAboutPage() {
   coding every time I find a solution and watch it run. And while I can’t resist 
   the gratification of seeing code manifest to a web page, what truly excites me 
   about web development is that it continually trains me to think differently and 
-  approach what I see in new ways.
+  approach what I see in new ways. 
+  <br>
+  <br>
+  Before web development, I had an undergraduate degree in biology and worked
+  as a registered behavioral technician for children with autism. From lab partners 
+  to supervisors, there were a lot of people that taught me not only what it means 
+  to work well on a team, but also what qualities I value in my team members. 
+  I have always gotten along with all team members, but the ones I have noticed I tend to
+  connect with better are those whom I can learn from. That being said, I would be 
+  incredibly grateful and excited to work on a team with great programmers.  
   <br>
   <br>
   Web development is without a doubt high up on the list of things I enjoy, but 
@@ -87,10 +96,11 @@ function generateAboutPage() {
   <h2 class="title-text" id="contact">CONTACT</h2>
   <div class="about-boxes">
   <p class="blue-box" id="contact-info">
-  
   email: <a class="link" href="mailto:katemeng08@gmail.com?">katemeng08@gmail.com</a>
   <br>
   <a class="link" target="_blank" href="https://content.linkedin.com/content/dam/business/talent-solutions/global/en_us/blog/2019/07/Katrina-Ortiz.jpg">i'm sorry i don't have a linkedin, but here's where it'd go</a>
+  <br>
+  <a class="link" target="_blank" href="https://github.com/ktmng">github</a>
   </p>
   </div>
 </section>
@@ -109,9 +119,9 @@ function handleAboutButton() {
     console.log("handleAboutButton ran");  
 }
 
-function handleGithubButton() {
-  $('.main').on('click', '#github-button', () => {
-    window.open('https://github.com/ktmng', '_blank')
+function handleProjectsButton() {
+  $('.main').on('click', '#projects-button', () => {
+    renderMainPage();
     });
     console.log("handleGithubButton ran");
 }
@@ -120,7 +130,7 @@ function initPage() {
   renderMainPage();
   handleMainButton();
   handleAboutButton();
-  handleGithubButton();
+  handleProjectsButton();
 }
 
 $(initPage);
