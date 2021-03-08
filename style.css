@@ -124,6 +124,7 @@ a {
     line-height: normal;
     color: rgb(51, 51, 51);
     margin: auto;
+    margin-bottom: 2em;
 }
 .project-title {
     font-weight: bolder;

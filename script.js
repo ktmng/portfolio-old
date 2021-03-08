@@ -10,9 +10,7 @@ function generateMainPage() {
     <h1 class="title-text" id="kate-meng">KATE MENG</h1>
     <div class=mini-bio-boxes>
     <img class="grey-box" img src="images/portfolio-doodle.png">
-    <p class="orange-box" id="mini-bio-text">I am an aspiring web developer 
-      currently enrolled in Thinkful's 
-      Full Stack Web Development Program.
+    <p class="orange-box" id="mini-bio-text">I am an aspiring web developer.
       I go nuts over watching web pages 
       come to life and cool animal facts. 
       If you have one, you can tell it to me at 
@@ -27,7 +25,7 @@ function generateMainPage() {
     <img class="grey-box" img src="images/betta.PNG">
     <p class="blue-box" id="betta-proj-text">
       <span class="project-title">Betta Fish Quiz</span> <br>
-      <a class="link" href="https://ktmng.github.io/8.9-implement-your-quiz-app" target="_blank">Live Page</a> | <a class="link" href="https://github.com/ktmng/8.9-implement-your-quiz-app" target="_blank">Github</a><br>
+      <a class="link" href="https://ktmng.github.io/betta-fish-quiz-app/" target="_blank">Live Page</a> | <a class="link" href="https://github.com/ktmng/betta-fish-quiz-app" target="_blank">Github</a><br>
       <span class="italic">Technologies: HTML, CSS, JavaScript, jQuery</span><br>
       <br>
       An interactive quiz application that allows users to test their knowledge 
@@ -38,7 +36,22 @@ function generateMainPage() {
       fundamentals of web development.
     </p>
   </div>
-  </section>`;
+
+  <div class=portfolio-boxes>
+  <img class="grey-box" img src="images/makeup.PNG">
+  <p class="blue-box" id="makeup-proj-text">
+    <span class="project-title">Make-Up Your Mind</span> <br>
+    <a class="link" href="https://ktmng.github.io/make-up-your-mind/" target="_blank">Live Page</a> | <a class="link" href="https://github.com/ktmng/make-up-your-mind" target="_blank">Github</a><br>
+    <span class="italic">Technologies: HTML, CSS, JavaScript, jQuery</span><br>
+    <span class="italic">Built With: Youtube DATA API, Makeup API - Herokuapp</span><br>
+    <br>
+    An application for make-up lovers to search and view a variety of 
+    products from different brands in addition to watching videos related 
+    to what they searched for. Users can view the products along with their
+    preset corresponding descriptions, prices, and links to purchase them. Users may also choose to view the videos either in the window or in a new tab by clicking the respective links.
+  </p>
+</div>
+</section>`;
 }
 
 function renderMainPage() {
@@ -98,7 +111,7 @@ function generateAboutPage() {
   <p class="blue-box" id="contact-info">
   email: <a class="link" href="mailto:katemeng08@gmail.com?">katemeng08@gmail.com</a>
   <br>
-  <a class="link" target="_blank" href="https://content.linkedin.com/content/dam/business/talent-solutions/global/en_us/blog/2019/07/Katrina-Ortiz.jpg">i'm sorry i don't have a linkedin, but here's where it'd go</a>
+  <a class="link" target="_blank" href="https://www.linkedin.com/in/kate-meng/">linkedin</a>
   <br>
   <a class="link" target="_blank" href="https://github.com/ktmng">github</a>
   </p>
